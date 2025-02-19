@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+
+    <!-- star icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@500&family=Roboto:wght@300&family=Teko:wght@600&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        body {
+            /* background-color: wheat; */
+            /* border: 2px solid blue; */
+            /* margin: 30px; */
+            /* padding: 30px; */
+            display: flex;
+            width: 245%;
+            height: auto;
+        }
+      /*  .container-hotels {
+            background-color: wheat;
+            border: 2px solid blue;
+            margin: 30px;
+            padding: 30px;
+            display: flex;
+            margin: 20px;
+
+        }*/
+
+        .hotel1 {
+            /* background: #DCAE96; */
+            width: 60vh;
+            height: auto;
+            /* border: 2px solid red; */
+            /* border-radius: 20px; */
+            overflow: hidden;
+            /* object-fit: cover; */
+            /* box-shadow: 2px 5px 13px 3px black; */
+            /* display: flex;
+            flex-direction: column; */
+            margin: 20px;
+        }
+
+        .hotel1-img {
+            /* border: 2px solid black; */
+            /* border-radius: 20px; */
+            object-fit: cover;
+            margin-bottom: 0;
+
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .hotel1-name>p {
+            font-size: small;
+            margin: 0;
+            font-family: Lato, sans-serif !important;
+            color: rgba(0, 0, 0, 0.8);
+
+        }
+
+        .hotel1-info .hotel1-name {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+
+        }
+
+        img {
+            /* border: 2px solid black; */
+            border-radius: 20px;
+            height: 36vh;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hotel1-info {
+            padding: 10px 10px 5px 10px;
+            font-family: Lato, sans-serif !important;
+            /* border: 2px solid black; */
+            /* position: absolute; */
+            top: 35%;
+            left: 5.5%;
+            background-color: whitesmoke;
+            /* z-index: 2; */
+            justify-content: space-around;
+            box-shadow: 1px 3px 12px 0.5px #0000004a;
+            width: 100%;
+
+        }
+
+        .hotel1-info p {
+            padding: 1px;
+            font-family: Lato, sans-serif !important;
+            font-size: small;
+
+        } 
+
+        .btn {
+            border: 1px solid brown;
+            margin-left: 59%;
+            border-radius: 3px;
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            padding: 6px 12px;
+            font-family: Lato,sans-serif !important;
+            font-size: 10px;
+            text-decoration: none;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+            /* transform: 1s ; */
+            /* font-size: 14px; */
+            box-shadow: 1px 2px 9px black;   
+            
+        }
+
+        .fa-star {
+            font-size: small;
+        }
+        
+        .hotel1-info .price {
+            color: green;
+            font-size: large;
+        }
+        .hotel1-info p span {
+            content: "\20B9";
+           
+        } 
+
+        .hotel1-info p .night {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: small;
+           
+        }  
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+    
+        <!-- Beach Resort-1 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://media.cntraveler.com/photos/53da60a46dec627b149e66f4/16:9/w_2580,c_limit/hilton-moorea-lagoon-resort-spa-moorea-french-poly--110160-1.jpg" alt="beach_resort">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Beach Resort</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 Beach resort across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 6,999 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+        <!-- hoCity Center Hotelstel-2 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://www.joonsquare.com/usermanage/image/business/hotel-downtown-srinagar-20177/hotel-downtown-srinagar-unnamed.jpg" alt="City_center_hotels">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">City Center Hotels</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 City Center hotels across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 3,799 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+        <!-- Airport Hotels-3 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/23/e1/11/99/hotel-exterior.jpg" alt="Airport_Hotels">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Airport Hotels</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 15 across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 5,899 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+        <!-- Mountain Resorts-4 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/344585303.jpg?k=eb7e6f8757eb029e8cd239f0f15c0a86b5c4b67b419e7b0777c2ab0066a6fd68&o=&hp=1" alt="Mountain Resorts">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Mountain Resorts</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 Beach resort across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 9,999 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+        <!-- Countryside Retreats-5 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1437371450/Domestic%20Hotels/Hotels_KAWARDA/Bhoramdeo%20Jungle%20Retreat/Overview.jpg" alt="Countryside Retreats">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Countryside Retreats</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 10 Countryside Retreats across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 4,569 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+
+        <!-- Waterfront Hotels-6 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2020/04/Lily-Beach-Resort-Spa-Maldives.jpg?fit=1024%2C627&ssl=1" alt="Waterfront Hotels">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Waterfront Hotels</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 Waterfront Hotels across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 10,999 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+
+        <!-- Historic Hotels-7 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://3.bp.blogspot.com/-VoiJAPUwWnY/WPryFCy1EUI/AAAAAAAAJ6I/54Whq05uO20JVXFa25xG5NR2SEMobJ3-QCLcB/s1600/jaipurs-rambagh-palace-features-in-global-top-10-heritage-hotels-list.jpg" alt="beach_resort">          
+            </div>
+            
+            <div class="hotel1-info">
+                <span class="hotel-name">Historic Hotels</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 Historic Hotels across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 15,900 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+
+        <!-- Resort Islands-8 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/29/29/a8/f8/scrub-island-aerial-at.jpg" alt="Resort Islands">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Resort Islands </span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 Resort Islands across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 14,999</p>
+            </div>
+        </div>
+
+
+        <!-- Safari Lodges-9 -->
+        <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://wp.inews.co.uk/sei_150976236" alt="Safari Lodges">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Safari Lodges</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 Safari Lodges across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 8,999 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+         <!-- Urban Boutique Hotels-10 -->
+         <div class="hotel1">
+            <div class="hotel1-img">
+                <img src="https://upstatebusinessjournal.com/wp-content/uploads/sites/2/2022/03/Kimpton-Exterior-Renderings-1-1_Page_1.jpg" alt="Urban Boutique Hotels">          
+            </div>
+            <div class="hotel1-info">
+                <span class="hotel-name">Urban Boutique Hotels</span>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span></div>    &nbsp;     <a href="/links/Hotels_Beach_Resort.html" class="btn">View Hotels</a>
+
+                <p>Top 20 Urban Boutique Hotels across the 70+ destination.</p>
+                <p class="price">From <span class="price">&#8377;</span> 6,999 <span class="night">Per Night</span></p>
+            </div>
+        </div>
+
+
+        
+    
+
+    
+    
+</body>
+
+</html>
+
+<!-- 
+<div class="hotel1-name">
+    <span>Taj Mahal</span><br>
+    <p>New Delhi, India</p>
+</div>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<div class="hotel1-info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aperiam doloremque molestias dolorum
+        laboriosam rem alias?</p>
+</div> -->

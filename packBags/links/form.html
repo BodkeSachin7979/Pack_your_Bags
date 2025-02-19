@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Courgette&family=Lato:wght@100&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Raleway:ital,wght@1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+
+        *{
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: large;
+        }
+
+       
+        span{
+            color: red;
+        }
+
+        h5{
+            color: red;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .bgform{
+            margin: 10vh 30vh 10vh 30vh;
+            border-radius: 9px;
+            background-color: rgba(247, 185, 115, 0.459);
+            
+        }
+
+        body {
+            background-size: 100%;
+            background-image: url("/images/imgcontact.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+
+        }
+        /* body{
+            background-size: 100%;
+            background-image: url("/images/imgcontact.jpg");
+            background-repeat: no-repeat;
+        } */
+
+        .Tour-Type{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+            color:rgb(33, 30, 30);
+            text-decoration-line: underline;
+        }
+
+        .submit-btn {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .submit-btn input {
+            color: aliceblue;
+            font-family: 'Roboto', sans-serif;
+            background: rgba(4, 0, 255, 0.945);
+            border-radius: 10px;
+            border:2px solid black;
+            margin: 2px 5px;
+        }
+
+        .image-signature {
+            font-size: large;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset class="bgform">
+        <legend aria-setsize="4"></legend>
+        <h2>Registration Form</h2>
+            <h5>Personal Details</h5>
+                <div class="Personal">
+                    <label for="SurName">SirName<span> *</span></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Name" id="Name" placeholder="FirstName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="FirstName">Firstname<span> *</span></label>&nbsp;&nbsp;&nbsp;<input type="text" name="FirstName" id="FirstName" placeholder="FirstName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                    <label for="MiddleName">Middlename <span> *</span></label>&nbsp;&nbsp;&nbsp;<input type="text" name="MiddleName" id="MiddleName"><br><br><br>
+                    <label for="Dateofbirth">Date of Birth<span> *</span> </label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="Date of birth" id="Dateofbirth">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                    <label for="Gender">Gender <span> *</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="Gender" id="Gender" value="male">Male&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="Gender" id="Gender" value="female">Female
+                            <input type="radio" name="Gender" id="Gender" value="Othwes">Others
+                    <br><br>
+                    <label for="SurName">Aadhaar Card No. (UID No.)<span> *</span></label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Aadhaar Card No. (UID No.)" id="Aadhaar Card No. (UID No.)">
+                    <br><br>
+                    <label for="Pwd">Is Person with Disability (PwD) <span> *</span>&nbsp;&nbsp;
+                        Yes<input type="radio" name="Pwd" id="Pwd" value="Person with disable">&nbsp;&nbsp;&nbsp;
+                        No <input type="radio" name="Pwd" id="Pwd" value="Is Person with Disability (PwD)">
+                    </label> 
+                </div>
+            <h5>Contact Details</h5>  
+                <div class="contact">
+                    <label for="Address">Address <span> *</span></Address></label>&nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Adress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="Landmark">Landmark <span> *</span></label>&nbsp;&nbsp;&nbsp;<input type="text" name="Landmark" id="Landmark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="District">District <span> *</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="District" id="District">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><br>
+                    <label for="City ">City <span> *</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="City" id="City">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="Pincode">Pincode <span> *</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="Pincode" id="Pincode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="Contact No.">Contact No. <span> *</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="number" name="Contact" id="Contact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><br>
+                    <label for="Email ID *">Email-ID <span> *</span></label>&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>  
+            <h5 style="color: red;">Other details</h5>
+                <div class="Tour-Type">
+                    <label for="Tour type">Tour Type
+                             <ul>
+                                <input type="radio" name="Tour" id="Tour">Bussiness<br>
+                                <input type="radio" name="Tour" id="Tour">Couple<br>
+                                <input type="radio" name="Tour" id="Tour">Family<br>
+                                <input type="radio" name="Tour" id="Tour">Freinds<br>
+                                <input type="radio" name="Tour" id="Tour">Solo<br>      
+                            </ul>
+                    </label>
+                            </ul>
+                    <label for="Group">How many people are there in your group</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="number" id="number"><br><br>
+                    <label for="visit">when you are planning to vist</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="date" id="date"><br><br>
+                    <label for="confort">what is your confort status</label>
+                            <ul>
+                                <input type="radio" name="status" id="Status">Laxurient<br>
+                                <input type="radio" name="status" id="Status">Semi-Laxurient<br>
+                                <input type="radio" name="status" id="Status">Normal Budget<br>
+                                <input type="radio" name="status" id="Status">Low-budget<br>   
+                            </ul>      
+                </div>
+      
+
+                <!-- image and signature block -->
+                <div class="image-signature">
+                    <label for="image">Add your image:</label>
+                    <input type="file" name="image" id="image">
+                    <br>
+                    <label for="sign">Add your scanned signature image:</label>
+                    <input type="file" name="sign" id="sign">
+                </div>
+
+                 <!-- Submit and previous button -->
+                 <div class="submit-btn"> 
+                    <a href="file:///E:/SEM-II/Pack%20YO/packyourbags.html#">
+                        <input type="button" name="back-button" id="back-button" value="Previous">
+                    </a>
+                    <input type="submit" name="submit-btn" id="submit-btn" value="Submit">
+                </div>
+    </fieldset>   
+</body>
+</html>

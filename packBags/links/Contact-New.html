@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact New</title>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awasome link...................................... -->
+    <script src="https://kit.fontawesome.com/d21ef16809.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awasome cdn link .................................-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Kanit:wght@500&family=Roboto:wght@300&family=Teko:wght@600&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'DM Sans', sans-serif;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Teko', sans-serif;
+        }
+
+        body {
+            background-image: url("/images/imgcontact.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+
+        }
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity here */
+            /* border: 2px solid #fff ; */
+            display: flex;
+        
+        }
+
+        .content {
+            /* border: 2px solid red ; */
+            width: 105vh;
+            height: auto;
+            margin: 70px 10px 70px 150px;
+        }
+
+        .user-input {
+            /* border: 2px solid red ; */
+            width: 105vh;
+            height: auto;
+            margin: 70px 150px 70px 10px;
+        }
+
+        .phone, .location, .emails {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            padding: 20px;
+            /* border: 2px solid yellow ; */
+            margin: 5%;
+        }
+
+        .fa-phone , .fa-map-marker , .fa-send {
+            font-size:x-large;
+            color: peru;
+            
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #fff;
+            padding: 30px 45px 0px ;
+        }
+        
+        span {
+            font-size: larger;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: small;
+        }
+        
+        .user-input span {
+            color: #fff;
+            margin: 30px 0px 0px 20px;
+        } 
+
+        textarea, input {
+            border: none;
+            background: transparent;
+            /* border-bottom: 1px solid #fff; */
+            width: 90%;
+        }
+
+        textarea, input:focus {
+            outline: none;
+            outline-style: none;
+            border-bottom: 1px solid #fff;       
+            text-underline-offset:unset;
+        }
+        
+        #name , #email, #messege ,#subject {
+            color: #fff;
+            margin: 0px 20px 20px 20px;
+        }
+
+        #submit {
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            padding: 15px;
+            font-size: large;
+            background: peru;
+            margin: 0.5% 2% 0% 4% ;
+        }
+
+        #submit:hover {
+            background: rgb(233, 118, 4);
+            cursor: pointer;
+        }
+
+        .box {
+            /* border: 2px solid red; */
+            bottom: 0;
+            position: absolute;
+            
+            right: 0;
+            
+        }
+
+        .box .fa-brands {
+            margin: 10px;
+            color: peru;
+            font-size: x-large;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+       <div class="content">
+            <h1>CONTACT US</h1>
+            <div class="phone">
+                
+                <i class="fa fa-phone"> &nbsp; </i> <span>CALL US</span>
+                <p>91+ 9284963183, 91+ 7757921898</p>
+            </div>
+
+            <div class="location">
+                <i class="fa fa-map-marker"> &nbsp; </i> <span>LOCATION</span>
+                <p>MGM's College of Engineering, Airport road, Namaskar chowk, <br> Nanded-431605</p>
+            </div>
+
+            <div class="emails">
+                <i class="fa fa-send"> &nbsp;</i> <span>EMAIL</span>
+                <p>s21_bodke_sachin@mgmcen.ac.in <br> s21_bhagat_ravi@mgmcen.ac.in</p>
+            </div>
+       </div>
+
+       <div class="user-input">
+            <br><br>
+            <form action="https://formsubmit.co/satyajitchavan2004@gmail.com" method="POST">
+                <span>Name</span><br><input type="text"  name="name" id="name" placeholder="Entet your name" required> <br>
+                <span>Email</span><br><input type="email" name="email" id="email" placeholder="Entet your email" required><br>
+                <span>subject</span><br><input type="subject" name="subject" id="subject" placeholder="Entet your subject" required><br>
+                <span>Messege</span><br><textarea name="messege" id="messege" cols="30" rows="10" placeholder="Enter your Messege" required></textarea> 
+                <input type="hidden" name="_template" value="table">
+                <input type="submit" id="submit" value="Submit">
+            </form>
+
+       </div>
+       <div class="box">
+      
+        <a href="#"><span class="fa-brands fa-square-facebook" ></span></a>
+        <a href="#"><span class="fa-brands fa-square-instagram" ></span></a>
+        <a href="#"><span class="fa-brands fa-square-twitter" ></span></a>
+        <a href="#"><span class="fa-brands fa-linkedin" ></span></a>
+    </div>
+    </div>
+  
+</body>
+</html>
